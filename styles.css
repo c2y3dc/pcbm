@@ -1,5 +1,5 @@
 body {
-  padding: 100px;
+  padding-top: 90px;
   color: dodgerblue; }
 
 .navbar-brand {
@@ -13,5 +13,62 @@ body {
 
 .heightfix {
   margin-top: 25px; }
+
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: white;
+  background: url(assets/section_1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: white;
+  background: url(assets/section_2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.content-space-three {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: white;
+  background: url(assets/section_3.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.widthfix {
+  padding: 0; }
+
+.diagram {
+  max-width: 100%;
+  max-height: 100%; }
+
+.content h1 {
+  font-size: 3vw; }
+.content p {
+  font-size: 2vw; }
+.content li {
+  font-size: 1vw; }
+
+.panel-body {
+  color: black; }
+
+.content-block-two {
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,10 +21,22 @@ html(lang="en")
 				#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-stacked
 					ul.nav.navbar-nav.heightfix
 						li.active
-							a(href='#') Link
+							a(href='#s1') Page 1
 								span.sr-only (current)
 						li
-							a(href='#') Link
+							a(href='#s2') Page 2
+						li
+							a(href='#s3') Page 3
+						li
+							a(href='#s4') Page 4
+						li
+							a(href="#s5") Page 5
+						li
+							a(href="#s6") Page 6
+						li
+							a(href="#s7") Page 7
+						li
+							a(href="#s8") Page 8
 					.navbar-right.navbar-header
 						h1 Power Generation
 					//- ul
@@ -39,10 +51,10 @@ html(lang="en")
 					//- 	li.scrollTop
 					//- 		a(href="#")
 					//- 			span.entypo-up-open
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s1
 			video(autoplay="autoplay", muted="muted", poster="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/home/OneTouchCity_Frame1_dark.jpg").vid
 				source(src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.mp4", type="video/mp4")
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s2
 			.content-space-one
 				.container.content
 					h1 <strong>The PI System enables Power Generation suppliers to better manage one unit or an entire fleet of generating units</strong>
@@ -53,7 +65,7 @@ html(lang="en")
 						li maximize use of resources
 						li increase reliability and availability
 						li support life extetnsion
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s3
 			.content-block-one
 				.container
 					img(src="assets/5.jpg").diagram
@@ -65,14 +77,15 @@ html(lang="en")
 							li provides a comprehensive data environment that can be used to conduct a more complete analysis of current conditions
 							li transforms real-time data into useful information and creates event frames to supplement this highly detailed data analysis
 							li provides the ability to efficiently perform root cause analysis, in case of a failure
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s4
 			.content-space-two
 				.container.content
 					h1 "<strong>Avoiding a catastrophic failure</strong> is quite a good achievement, but repairing those transformers <strong>will save us about five million Euros</strong>; that makes it even better.” <br />  
 					p - Kimmo Nepala, Planning Engineer, <strong>Fingrid Oyj</strong>
-					img(src="assets/fingrid_story_button.png").floatright
+					button(type="submit").center-block.floatright
+						img(src="assets/fingrid_story_button.png")
 
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s5
 			.content-block-one
 				.container
 					.content
@@ -93,7 +106,7 @@ html(lang="en")
 										p <strong>Whitepaper</strong> Condition Based Maintenance Bolsters the Bottom Line in Power Generation
 										button(type="submit").center-block
 											img(src="assets/download_whitepaper_button.png")
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s6
 			.content-space-three
 				.container.content
 					h1 <strong>How it works</strong>
@@ -113,14 +126,49 @@ html(lang="en")
 									p <strong>Improving Asset Health</strong> Take Action Based on Real-time Condition Monitoring
 									button(type="submit").center-block
 										img(src="assets/section_6_view_webinar_button.png")
-		.container-fluid.widthfix
+		.container-fluid.widthfix#s7
 			.content-block-two
 				.container.content
 					h1 "<strong>Time is of the essence.</strong><span class="black">The sooner you find out there is a problem,</span> <strong>the sooner you can do something about it.</strong>
 					p.black - Mohammed Yousuf, Senior Staff Engineer, <strong>Exelon</strong>
-					img(src="assets/exelon_story_button.png").floatright
+					button(type="submit").center-block.floatright
+						img(src="assets/exelon_story_button.png")
+		.container-fluid.widthfix.greybgform#s8
+			.content-block-one
+				.container
+					.content
+						p 
+							small We know we may not have answered all your questions, so we invite you to contact us for a 1:1 discussion to find out how the PI System for CBM can address your specific operation optimization and system efficiency challenges.
+				.row
+					.input-group.input-group-lg.col-sm-12.col-md-6.centered
+						input(type="text", placeholder="First Name").form-control
+					.input-group.input-group-lg.col-sm-12.col-md-6.centered
+						input(type="text", placeholder="Last Name").form-control
+					.input-group.input-group-lg.col-sm-12.col-md-6.centered
+						input(type="email", placeholder="Email Address").form-control
+					.input-group.input-group-lg.col-sm-12.col-md-6.centered
+						input(type="text", placeholder="Job Title").form-control
 		.tallone
-
+		.footer
+			.container
+				.links
+					span © 2015 OSIsoft
+					span |
+						a(href="https://twitter.com/OSIsoft") Osisoft.com
+					span |
+						a(href="http://www.osisoft.com/home/Privacy_Policy.aspx") Privacy
+				.image-links
+					ul.social
+						li.social_twitter.trans
+							a(href="https://twitter.com/OSIsoft", target="_blank")
+						li.social_facebook.trans
+							a(href="http://www.facebook.com/OSIsoft", target="_blank")
+						li.social_linkedin.trans
+							a(href="http://www.linkedin.com/company/osisoft", target="_blank")
+						li.social_users.trans
+							a(href="http://community.osisoft.com/", target="_blank")
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+		script(src="main.js")

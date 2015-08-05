@@ -18,27 +18,27 @@ html(lang="en")
 						span.icon-bar
 					a.navbar-brand(href="#")
 						img(alt="OSIsoft" src="assets/osisoft-logo.png")
-				#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-stacked
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse.nav-stacked.ofn
 					ul.nav.navbar-nav.heightfix
 						li.active
-							a(href='#s1') Page 1
+							a(href='#s1') Video
 								span.sr-only (current)
 						li
-							a(href='#s2') Page 2
+							a(href='#s2') The PI System
 						li
-							a(href='#s3') Page 3
+							a(href='#s3') The PI System for CBM
 						li
-							a(href='#s4') Page 4
+							a(href='#s4') Fingrid Oyj’s Story
 						li
-							a(href="#s5") Page 5
+							a(href="#s5") Learn More
 						li
-							a(href="#s6") Page 6
+							a(href="#s6") How It Works
 						li
-							a(href="#s7") Page 7
+							a(href="#s7") Exelon's Story
 						li
-							a(href="#s8") Page 8
-					.navbar-right.navbar-header
-						h1 Power Generation
+							a(href="#s8") Request Information
+					//- .navbar-right.navbar-header
+					//- 	h1 Power Generation
 					//- ul
 					//- 	li.active
 					//- 		a.nav-section1#link1 S1. Info
@@ -52,8 +52,10 @@ html(lang="en")
 					//- 		a(href="#")
 					//- 			span.entypo-up-open
 		.container-fluid.widthfix#s1
+			//- video(autoplay="autoplay", muted="muted", poster="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/home/OneTouchCity_Frame1_dark.jpg").vid
+			//- 	source(src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.mp4", type="video/mp4")
 			video(autoplay="autoplay", muted="muted", poster="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/home/OneTouchCity_Frame1_dark.jpg").vid
-				source(src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.mp4", type="video/mp4")
+				source(src="assets/cbm.mov")
 		.container-fluid.widthfix#s2
 			.content-space-one
 				.container.content
@@ -139,15 +141,15 @@ html(lang="en")
 					.content
 						p 
 							small We know we may not have answered all your questions, so we invite you to contact us for a 1:1 discussion to find out how the PI System for CBM can address your specific operation optimization and system efficiency challenges.
-				.row
-					.input-group.input-group-lg.col-sm-12.col-md-6.centered
-						input(type="text", placeholder="First Name").form-control
-					.input-group.input-group-lg.col-sm-12.col-md-6.centered
-						input(type="text", placeholder="Last Name").form-control
-					.input-group.input-group-lg.col-sm-12.col-md-6.centered
-						input(type="email", placeholder="Email Address").form-control
-					.input-group.input-group-lg.col-sm-12.col-md-6.centered
-						input(type="text", placeholder="Job Title").form-control
+					.row
+						.input-group.input-group-lg.col-sm-12.col-md-6.centered
+							input(type="text", placeholder="First Name").form-control
+						.input-group.input-group-lg.col-sm-12.col-md-6.centered
+							input(type="text", placeholder="Last Name").form-control
+						.input-group.input-group-lg.col-sm-12.col-md-6.centered
+							input(type="email", placeholder="Email Address").form-control
+						.input-group.input-group-lg.col-sm-12.col-md-6.centered
+							input(type="text", placeholder="Job Title").form-control
 		.tallone
 		.footer
 			.container

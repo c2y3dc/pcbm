@@ -1,12 +1,12 @@
 $(document).ready(function() {
     // $('body').scrollspy();
-        if ($(window).width() < 769) {
-            $('.navbar-default').removeClass("sticky").removeClass("navbar-fixed-top").addClass("navbar-static-top");
-        }
+    if ($(window).width() < 769) {
+        $('.navbar-default').removeClass("sticky").removeClass("navbar-fixed-top").addClass("navbar-static-top");
+    }
 
-        if ($(window).width() > 768) {
-            $('.navbar-default').addClass('navbar-fixed-top');
-        }
+    if ($(window).width() > 768) {
+        $('.navbar-default').addClass('navbar-fixed-top');
+    }
     $(window).scroll(function() {
         function scrollNav() {
             $('.nav a').click(function() {
@@ -24,7 +24,25 @@ $(document).ready(function() {
             $('.scrollTop a').scrollTop();
         }
         scrollNav();
-        
+
+        if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+
+        // function scrollToTop() {
+        //     verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 90;
+        //     element = $('body');
+        //     offset = element.offset();
+        //     offsetTop = offset.top;
+        //     $('html, body').animate({
+        //         scrollTop: offsetTop
+        //     }, 500, 'linear');
+        // }
+
+        // $('.scroll-top-wrapper').on('click', scrollToTop);
+
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });

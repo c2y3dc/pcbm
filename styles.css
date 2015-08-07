@@ -8,9 +8,6 @@ body {
   box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.3);
   margin: 0; }
 
-.tallone {
-  height: 2000px; }
-
 .heightfix {
   margin-top: 25px; }
 
@@ -58,13 +55,13 @@ body {
   max-height: 100%; }
 
 .content h1 {
-  font-size: 3.2vw;
+  font-size: 2.5rem;
   font-weight: 200; }
 .content p {
-  font-size: 1.5vw;
+  font-size: 2rem;
   font-weight: 100; }
 .content li {
-  font-size: 1.2vw; }
+  font-size: 1.5rem; }
 
 .panel-body {
   color: black; }
@@ -185,9 +182,6 @@ ul.social li {
 .centered {
   margin: 0.6rem auto; }
 
-@media screen and (min-width: 768px) {
-  body {
-    padding-top: 90px; } }
 /* navbar toggle hack */
 .navbar-header {
   float: none; }
@@ -218,5 +212,28 @@ ul.social li {
 
 .ofn {
   overflow: hidden; }
+
+.tooltip-inner {
+  font-size: 1.2rem;
+  white-space: pre-wrap;
+  text-align: justify;
+  max-width: 40rem; }
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 90px; }
+
+  .content h1 {
+    font-size: 4rem;
+    font-weight: 200; }
+  .content p {
+    font-size: 2.5rem;
+    font-weight: 100; }
+  .content li {
+    font-size: 1.8rem; }
+
+  .tooltip-inner {
+    font-size: 2rem;
+    max-width: none; } }
 
 /*# sourceMappingURL=styles.css.map */

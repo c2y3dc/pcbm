@@ -32,6 +32,10 @@ $(document).ready(function() {
             $('.scrollTop a').scrollTop();
         }
         scrollNav();
+        
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
 
         // $('a[href*=#]:not([href=#])').click(function() {
         //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -114,7 +118,7 @@ $(document).ready(function() {
         // $('body').scrollspy({ target: '.navbar', offset:80 });
     });
 });
-        //jQuery to collapse the navbar on scroll
+//jQuery to collapse the navbar on scroll
 // $(window).scroll(function() {
 //     if ($(".navbar").offset().top > 50) {
 //         $(".navbar-fixed-top").addClass("top-nav-collapse");

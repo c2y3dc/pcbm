@@ -1,239 +1,56 @@
-body {
-  color: dodgerblue; }
+/*
+Error: File to import not found or unreadable: compass/css3.
+        on line 1 of styles.sass
 
-.navbar-brand {
-  height: 100%; }
+1: @import "compass/css3"
+2: body
+3: 	color: dodgerblue
+4: 
+5: .navbar-brand
+6: 	height: 100%
 
-.navbar-default {
-  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.3);
-  margin: 0; }
-
-.heightfix {
-  margin-top: 25px; }
-
-.content-space-one {
-  padding: 0px;
-  margin-bottom: 0px;
-  color: white;
-  background: url(assets/section_1.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
-.content-space-two {
-  padding: 0px;
-  margin-bottom: 0px;
-  color: white;
-  background: url(assets/section_2.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 150px; }
-
-.content-space-three {
-  padding: 0px;
-  margin-bottom: 0px;
-  color: white;
-  background: url(assets/section_3.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
-.widthfix {
-  padding: 0; }
-
-.diagram {
-  max-width: 100%;
-  max-height: 100%; }
-
-.content h1 {
-  font-size: 2.5rem;
-  font-weight: 200; }
-.content p {
-  font-size: 2rem;
-  font-weight: 100; }
-.content li {
-  font-size: 1.5rem; }
-
-.panel-body {
-  color: black; }
-
-.content-block-two {
-  padding: 100px 0px; }
-
-button {
-  padding: 0;
-  border: 0; }
-
-.content-block-one {
-  padding: 50px 0px; }
-
-.floatright {
-  float: right; }
-
-.black {
-  color: black; }
-
-.vid {
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  object-fit: cover;
-  transition: opacity 0.3s ease; }
-
-.greybgform {
-  text-transform: uppercase;
-  color: #606062;
-  background-color: #f6f6f7; }
-
-.footer {
-  width: 100%;
-  float: right;
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.image-links,
-.links {
-  display: inline-block; }
-
-.image-links {
-  vertical-align: middle;
-  position: relative; }
-
-.image-links img {
-  margin-left: 2px; }
-
-.social {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 35px;
-  width: 180px; }
-
-ul.social a {
-  display: block;
-  height: 35px;
-  width: 35px;
-  text-indent: -9999px; }
-
-ul.social li {
-  float: left;
-  margin-right: 10px; }
-
-.social_twitter a {
-  background: url(assets/social-media_twitter.png); }
-
-.social_facebook a {
-  background: url(assets/social-media_facebook.png); }
-
-.social_linkedin a {
-  background: url(assets/social-media_linkedin.png); }
-
-.social_users a {
-  background: url(assets/social-media_pisquare.png); }
-
-.links {
-  margin: 1rem; }
-
-.trans {
-  overflow: hidden;
-  cursor: pointer;
-  outline: 0;
-  border: 0;
-  border-radius: 0;
-  -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out; }
-
-.tiles:hover,
-.tiles:active,
-.tiles.active,
-.tiles:focus,
-.tiles:active:focus,
-.tiles.active:focus,
-.strips:hover,
-.strips:active,
-.strips.active,
-.strips:focus,
-.strips:active:focus,
-.strips.active:focus,
-.social > li:hover,
-.social > li:active,
-.social > li.active,
-.social > li:focus,
-.social > li:active:focus,
-.social > li.active:focus {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55); }
-
-.centered {
-  margin: 0.6rem auto; }
-
-/* navbar toggle hack */
-.navbar-header {
-  float: none; }
-
-.navbar-toggle {
-  display: block; }
-
-.navbar-collapse {
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-
-.navbar-collapse.collapse {
-  display: none !important; }
-
-.navbar-collapse.collapse.in {
-  display: block !important; }
-
-.navbar-nav {
-  float: none !important;
-  margin: 7.5px -15px; }
-
-.navbar-nav > li {
-  float: none; }
-
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.ofn {
-  overflow: hidden; }
-
-.tooltip-inner {
-  font-size: 1.2rem;
-  white-space: pre-wrap;
-  text-align: justify;
-  max-width: 40rem; }
-
-@media screen and (min-width: 768px) {
-  body {
-    padding-top: 90px; }
-
-  .content h1 {
-    font-size: 4rem;
-    font-weight: 200; }
-  .content p {
-    font-size: 2.5rem;
-    font-weight: 100; }
-  .content li {
-    font-size: 1.8rem; }
-
-  .tooltip-inner {
-    font-size: 2rem;
-    max-width: none; } }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+styles.sass:1
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A         on line 1 of styles.sass\A \A 1: @import \"compass/css3\"\A 2: body\A 3: 	color: dodgerblue\A 4: \A 5: .navbar-brand\A 6: 	height: 100%"; }

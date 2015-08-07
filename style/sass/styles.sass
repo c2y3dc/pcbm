@@ -18,7 +18,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(assets/section_1.png) no-repeat center center fixed
+	background: url(../../assets/section_1.png) no-repeat center center fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -29,7 +29,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(assets/section_2.png) no-repeat center center fixed
+	background: url(../../assets/section_2.png) no-repeat center center fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -40,7 +40,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(assets/section_3.png) no-repeat center center fixed
+	background: url(../../assets/section_3.png) no-repeat center center fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -135,16 +135,16 @@ ul.social li
 	margin-right: 10px
 
 .social_twitter a 
-	background: url(assets/social-media_twitter.png)
+	background: url(../../assets/social-media_twitter.png)
 
 .social_facebook a 
-	background: url(assets/social-media_facebook.png)
+	background: url(../../assets/social-media_facebook.png)
 
 .social_linkedin a 
-	background: url(assets/social-media_linkedin.png)
+	background: url(../../assets/social-media_linkedin.png)
 
 .social_users a 
-	background: url(assets/social-media_pisquare.png)
+	background: url(../../assets/social-media_pisquare.png)
 
 .links 
 	margin: 1rem
@@ -248,12 +248,14 @@ ul.social li
 	// 	opacity: 1
 	// 	transition: opacity 0.3s ease
 	.stagg
-		@include transition(opacity 0.3s)
+		@include transition(opacity 0.5s)
 		@include opacity(0)
-		@include absolute
+		// @include absolute
+		position: absolute
+		display: block
 
 		@for $i from 1 through 5
 			&:nth-child(#{$i})
-				@include transition-delay(0.1s * $i)
+				@include transition-delay(0.3s * $i)
 		.diacon:hover &
 			@include opacity(1)

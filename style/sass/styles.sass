@@ -1,6 +1,7 @@
 @import "compass/css3"
 body
 	color: dodgerblue
+	font-family: 'Open Sans', sans-serif
 
 .navbar-brand
 	height: 100%
@@ -63,15 +64,15 @@ body
 	position: absolute
 	display: none
 
-.content
-	h1
-		font-size: 2.5rem
-		font-weight: 200
-	p
-		font-size: 2rem
-		font-weight: 100
-	li
-		font-size: 1.5rem
+// .content
+// 	h1
+// 		font-size: 2rem
+// 		// font-weight: 200
+// 	p
+// 		font-size: 1.5rem
+// 		// font-weight: 100
+// 	li
+// 		font-size: 1rem
 .panel-body
 	color: black
 .content-block-two
@@ -214,7 +215,7 @@ ul.social li
 	overflow: hidden
 
 .tooltip-inner
-	font-size: 1.2rem
+	// font-size: 0.8rem
 	white-space: pre-wrap
 	text-align: justify
 	max-width: 40rem
@@ -244,6 +245,26 @@ ul.social li
 // .scroll-top-wrapper
 // 	i.fa
 // 		line-height: inherit
+.hero
+	position: relative
+	height: 90rem
+.hero-caption, .hero-button
+	position: absolute
+	padding-top: 6rem
+	text-align: center
+	top: 0
+	left: 0
+	min-width: 100%
+	color: white
+	z-index: 10
+.hero-button
+	padding-top: 45rem
+#s1
+	video
+		// position: absolute
+		min-width: 100%
+		// top: 9rem
+		// left: 0
 
 @media screen and (min-width: 768px)
 	body

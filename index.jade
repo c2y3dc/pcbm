@@ -8,6 +8,8 @@ html(lang="en")
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
 		//- link(rel="stylesheet", href="styles.css")
 		link(rel="stylesheet", href="style/stylesheets/styles.css")
+		link(href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700", rel='stylesheet', type='text/css')
+		script(src="//app-sjh.marketo.com/js/forms2/js/forms2.min.js", async)
 
 	body
 		nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
@@ -53,15 +55,21 @@ html(lang="en")
 					//- 	li.scrollTop
 					//- 		a(href="#")
 					//- 			span.entypo-up-open
-		.container-fluid.widthfix#s1
+		.container-fluid.widthfix.hero#s1
 			//- video(autoplay="autoplay", muted="muted", poster="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/home/OneTouchCity_Frame1_dark.jpg").vid
 			//- 	source(src="https://www.paypalobjects.com/webstatic/en_US/mktg/wright/videos/OneTouchCity.mp4", type="video/mp4")
 			video(autoplay="autoplay", muted="muted", poster="assets/vidcap.png").vid
 				source(src="assets/cbm.mov")
+			container
+				.hero-caption
+					h1 Optimizing Plant Operations with Condition Based Maintenance
+				.hero-button
+					p
+						a.btn.btn-lg.btn-primary(href="#", role="button") See the Advantages
 		.container-fluid.widthfix#s2
 			.content-space-one
 				.container.content
-					h1 <strong>The PI System enables Power Generation suppliers to better manage one unit or an entire fleet of generating units</strong>
+					h1 The PI System enables Power Generation suppliers to better manage one unit or an entire fleet of generating units
 					p A growing number of utility operators are considering the adoption of condition-based maintenance (CBM) and other proactive strategies that are driven by the actual condition of an asset rather than planned calendar- or time-based maintenance schedules. CBM promises to:
 					ul
 						li eliminate unnecessary maintenance
@@ -69,6 +77,7 @@ html(lang="en")
 						li maximize use of resources
 						li increase reliability and availability
 						li support life extetnsion
+					h2 Visit us and the POWER-GEN Show in LAs Vegas, December 8-10 at Booth #8235
 		.container-fluid.widthfix#s3
 			.content-block-one
 				.container
@@ -149,15 +158,17 @@ html(lang="en")
 					.content
 						p 
 							small We know we may not have answered all your questions, so we invite you to contact us for a 1:1 discussion to find out how the PI System for CBM can address your specific operation optimization and system efficiency challenges.
-					.row
-						.input-group.input-group-lg.col-sm-12.col-md-6.centered
-							input(type="text", placeholder="First Name").form-control
-						.input-group.input-group-lg.col-sm-12.col-md-6.centered
-							input(type="text", placeholder="Last Name").form-control
-						.input-group.input-group-lg.col-sm-12.col-md-6.centered
-							input(type="email", placeholder="Email Address").form-control
-						.input-group.input-group-lg.col-sm-12.col-md-6.centered
-							input(type="text", placeholder="Job Title").form-control
+					form(id="mktoForm_2931",style="width:100%;")
+					script MktoForms2.loadForm("//app-sjh.marketo.com", "494-OYA-934", 2931);
+					//- .row
+					//- 	.input-group.input-group-lg.col-sm-12.col-md-6.centered
+					//- 		input(type="text", placeholder="First Name").form-control
+					//- 	.input-group.input-group-lg.col-sm-12.col-md-6.centered
+					//- 		input(type="text", placeholder="Last Name").form-control
+					//- 	.input-group.input-group-lg.col-sm-12.col-md-6.centered
+					//- 		input(type="email", placeholder="Email Address").form-control
+					//- 	.input-group.input-group-lg.col-sm-12.col-md-6.centered
+					//- 		input(type="text", placeholder="Job Title").form-control
 		//- .tallone
 		//- .scroll-top-wrapper
 		//- 	//- span.scroll-top-inner

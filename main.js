@@ -10,6 +10,15 @@ $(document).ready(function() {
     $(window).scroll(function() {
         scrollNav();
     });
+    $('#adv').click(function() {
+        var src = 'https://www.youtube.com/watch?v=BfcPSm1Sqn0&output=embed';
+        $('#myModal').modal('show');
+        $('#myModal iframe').attr('src', src);
+    });
+
+    $('#myModal button').click(function() {
+        $('#myModal iframe').removeAttr('src');
+    });
     // if ($(window).scrollTop() > 100) {
     //     $('.scroll-top-wrapper').addClass('show');
     // } else {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/stylesheets/styles.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-    <script src="//app-sjh.marketo.com/js/forms2/js/forms2.min.js" async></script>
+    <script src="//app-sjh.marketo.com/js/forms2/js/forms2.min.js"></script>
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -39,7 +39,9 @@
           <h1>Optimizing Plant Operations with Condition Based Maintenance</h1>
         </div>
         <div class="hero-button">
-          <p><a href="#" role="button" class="btn btn-lg btn-primary">See the Advantages</a></p>
+          <p>
+            <button id="adv" type="button" data-toggle="modal" href="#openModal2" class="btn btn-primary btn-lg">See the Advantages</button>
+          </p>
         </div>
       </container>
     </div>
@@ -81,7 +83,7 @@
         <div class="container content">
           <h1>"<strong>Avoiding a catastrophic failure</strong> is quite a good achievement, but repairing those transformers <strong>will save us about five million Euros</strong>; that makes it even better.” <br />  </h1>
           <p>- Kimmo Nepala, Planning Engineer, <strong>Fingrid Oyj</strong></p>
-          <button type="submit" class="center-block floatright"><img src="assets/fingrid_story_button.png"></button>
+          <button type="submit" class="center-block floatright"><a href="assets/CB_Fingrid_LT_EN_FINAL.pdf"><img src="assets/fingrid_story_button.png"></a></button>
         </div>
       </div>
     </div>
@@ -117,7 +119,7 @@
       <div class="content-space-three">
         <div class="container content">
           <h1><strong>How it works</strong></h1>
-          <p>The PI System provides key <a href="#" data-toggle="tooltip" data-html="true" title="• capturing and sharing data in its original fidelity without averaging or aggregating, using proven methods that scale to an enterprise;&lt;br&gt;• providing efficient real-time data management from a wide variety of operational sources in a highly secure manner;&lt;br&gt;• using an Asset Framework to organize data streams and related process information by asset and plant topology, giving the data functional and operational context&lt;br&gt;• providing advanced analytics that convert raw data streams into meaningful events and values;&lt;br&gt;• implementing predictive warning notifications systems that send alerts to facilitate fast response to potential production or equipment problems&lt;br&gt;• serving up data to other advanced analytical tools and engines; and&lt;br&gt;• integrating business and operational systems to connect employees, business partners, suppliers, markets">capabilities</a> for CBM. It alters the process from a static or periodic assessment to a real-time assessment of asset health. Engineers are able to create a more comprehensive data environment that can be used to conduct thorough analysis of current conditions. This allows them to transform real-time data into valuable information that can supplement and enhance their data analysis.</p>
+          <p>The PI System provides key <a href="#" data-toggle="tooltip" data-html="true" title="• capturing and sharing data in its original fidelity without averaging or aggregating, using proven methods that scale to an enterprise;&lt;br&gt;• providing efficient real-time data management from a wide variety of operational sources in a highly secure manner;&lt;br&gt;• using an Asset Framework to organize data streams and related process information by asset and plant topology, giving the data functional and operational context&lt;br&gt;• providing advanced analytics that convert raw data streams into meaningful events and values;&lt;br&gt;• implementing predictive warning notifications systems that send alerts to facilitate fast response to potential production or equipment problems&lt;br&gt;• serving up data to other advanced analytical tools and engines; and&lt;br&gt;• integrating business and operational systems to connect employees, business partners, suppliers, markets" class="tt"> capabilities</a> for CBM. It alters the process from a static or periodic assessment to a real-time assessment of asset health. Engineers are able to create a more comprehensive data environment that can be used to conduct thorough analysis of current conditions. This allows them to transform real-time data into valuable information that can supplement and enhance their data analysis.</p>
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="panel panel-default">
@@ -131,7 +133,7 @@
               <div class="panel panel-default">
                 <div class="panel-body text-center"><img src="assets/section_6_thumbail_2.jpg" class="diagram">
                   <p><strong>Improving Asset Health</strong> Take Action Based on Real-time Condition Monitoring</p>
-                  <button type="submit" class="center-block"><img src="assets/section_6_view_webinar_button.png"></button>
+                  <button type="submit" class="center-block"><a href="http://www.osisoft.com/Templates/item-abstract.aspx?id=12569"><img src="assets/section_6_view_webinar_button.png"></a></button>
                 </div>
               </div>
             </div>
@@ -144,7 +146,7 @@
         <div class="container content">
           <h1>"<strong>Time is of the essence.</strong><span class="black">The sooner you find out there is a problem,</span> <strong>the sooner you can do something about it.</strong></h1>
           <p class="black">- Mohammed Yousuf, Senior Staff Engineer, <strong>Exelon</strong></p>
-          <button type="submit" class="center-block floatright"><img src="assets/exelon_story_button.png"></button>
+          <button type="submit" class="center-block floatright"><a href="assets/CB_Exelon_LT_EN_FINAL.pdf"><img src="assets/exelon_story_button.png"></a></button>
         </div>
       </div>
     </div>
@@ -154,7 +156,7 @@
           <div class="content">
             <p> <small>We know we may not have answered all your questions, so we invite you to contact us for a 1:1 discussion to find out how the PI System for CBM can address your specific operation optimization and system efficiency challenges.</small></p>
           </div>
-          <form id="mktoForm_2931" style="width:100%;"></form>
+          <form id="mktoForm_2931"></form>
           <script>MktoForms2.loadForm("//app-sjh.marketo.com", "494-OYA-934", 2931);</script>
         </div>
       </div>

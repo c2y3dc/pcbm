@@ -7,18 +7,44 @@ $(document).ready(function() {
     if ($(window).width() > 768) {
         $('.navbar-default').addClass('navbar-fixed-top');
     }
+    // var tag = document.createElement('script');
+    // tag.src = "https://www.youtube.com/iframe_api";
+    // var firstScriptTag = document.getElementsByTagName('script')[0];
+    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // var player;
+
+    // function onYouTubeIframeAPIReady() {
+    //     player = new YT.Player('player', {
+    //         width: "560",
+    //         height: "315",
+    //         videoId: "BfcPSm1Sqn0"
+    //             //- playerVars: {"autoplay": 0},
+    //             //- events: {
+    //             //-     "onReady": onPlayerReady,
+    //             //-     "onStateChange": onPlayerStateChange
+    //             //- }
+    //     });
+    // }
+    // $("#myModal").on('shown.bs.modal', function() {
+    //     if (typeof player.playVideo == 'function') {
+    //         player.playVideo();
+    //     } else {
+    //         var fn = function() {
+    //             player.playVideo();
+    //         };
+    //         setTimeout(fn, 200);
+    //     }
+    // });
+
+    // $("#myModal").on('hidden.bs.modal', function(e) {
+    //     player.stopVideo();
+    // });
+
     $(window).scroll(function() {
         scrollNav();
     });
-    $('#adv').click(function() {
-        var src = 'https://www.youtube.com/watch?v=BfcPSm1Sqn0&output=embed';
-        $('#myModal').modal('show');
-        $('#myModal iframe').attr('src', src);
-    });
 
-    $('#myModal button').click(function() {
-        $('#myModal iframe').removeAttr('src');
-    });
     // if ($(window).scrollTop() > 100) {
     //     $('.scroll-top-wrapper').addClass('show');
     // } else {

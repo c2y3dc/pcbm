@@ -321,7 +321,7 @@ ul.social li {
   left: 0;
   min-width: 100%;
   color: white;
-  z-index: 10;
+  z-index: 1;
 }
 
 /* line 260, ../sass/styles.sass */
@@ -341,34 +341,34 @@ ul.social li {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 368, ../sass/styles.sass */
+  /* line 273, ../sass/styles.sass */
   body {
     padding-top: 90px;
   }
 
-  /* line 371, ../sass/styles.sass */
+  /* line 276, ../sass/styles.sass */
   .content h1 {
     font-size: 4rem;
     font-weight: 200;
   }
-  /* line 374, ../sass/styles.sass */
+  /* line 279, ../sass/styles.sass */
   .content p {
     font-size: 2.5rem;
     font-weight: 100;
   }
-  /* line 377, ../sass/styles.sass */
+  /* line 282, ../sass/styles.sass */
   .content li {
     font-size: 1.8rem;
   }
 
-  /* line 379, ../sass/styles.sass */
+  /* line 284, ../sass/styles.sass */
   .tooltip-inner {
     font-size: 2rem;
     font-weight: 100;
     max-width: none;
   }
 
-  /* line 383, ../sass/styles.sass */
+  /* line 288, ../sass/styles.sass */
   .diacon {
     position: relative;
     overflow: hidden;
@@ -376,7 +376,7 @@ ul.social li {
     width: 1200px;
   }
 
-  /* line 388, ../sass/styles.sass */
+  /* line 293, ../sass/styles.sass */
   .stagg {
     -moz-transition: opacity 1.25s;
     -o-transition: opacity 1.25s;
@@ -387,48 +387,48 @@ ul.social li {
     position: absolute;
     display: block;
   }
-  /* line 396, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   .stagg:nth-child(1) {
     -moz-transition-delay: 0.25s;
     -o-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
     transition-delay: 0.25s;
   }
-  /* line 396, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   .stagg:nth-child(2) {
     -moz-transition-delay: 0.5s;
     -o-transition-delay: 0.5s;
     -webkit-transition-delay: 0.5s;
     transition-delay: 0.5s;
   }
-  /* line 396, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   .stagg:nth-child(3) {
     -moz-transition-delay: 0.75s;
     -o-transition-delay: 0.75s;
     -webkit-transition-delay: 0.75s;
     transition-delay: 0.75s;
   }
-  /* line 396, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   .stagg:nth-child(4) {
     -moz-transition-delay: 1s;
     -o-transition-delay: 1s;
     -webkit-transition-delay: 1s;
     transition-delay: 1s;
   }
-  /* line 396, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   .stagg:nth-child(5) {
     -moz-transition-delay: 1.25s;
     -o-transition-delay: 1.25s;
     -webkit-transition-delay: 1.25s;
     transition-delay: 1.25s;
   }
-  /* line 398, ../sass/styles.sass */
+  /* line 303, ../sass/styles.sass */
   #s3:hover .stagg {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 
-  /* line 400, ../sass/styles.sass */
+  /* line 305, ../sass/styles.sass */
   .d1 {
     opacity: 0.2;
     display: block;

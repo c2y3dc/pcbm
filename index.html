@@ -32,8 +32,8 @@
       </div>
     </nav>
     <div id="s1" class="container-fluid widthfix hero">
-      <video autoplay="autoplay" muted="muted" poster="assets/vidcap.png" class="vid">
-        <source src="assets/cbm.mov">
+      <video autoplay="autoplay" muted="muted" poster="assets/freeze_frame.jpg" class="vid">
+        <source src="assets/cbm.mp4" type="video/mp4">
       </video>
       <container>
         <div class="hero-caption">
@@ -98,7 +98,7 @@
                 <div class="panel panel-default">
                   <div class="panel-body text-center"><img src="assets/section_5_thumbail_1.png" class="diagram">
                     <p><strong>eBook</strong> A Guidebook to Implementing Condition-Based Maintenance (CBM) Using Real-time Data</p>
-                    <button type="submit" class="center-block"><img src="assets/download_ebook_button.png"></button>
+                    <button type="submit" class="center-block"><a href="assets/eBook_Power_CBM.pdf"><img src="assets/download_ebook_button.png"></a></button>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@
                 <div class="panel panel-default">
                   <div class="panel-body text-center"><img src="assets/section_5_thumbail_2.png" class="diagram">
                     <p><strong>Whitepaper</strong> Condition Based Maintenance Bolsters the Bottom Line in Power Generation</p>
-                    <button type="submit" class="center-block"><img src="assets/download_whitepaper_button.png"></button>
+                    <button type="submit" class="center-block"><a href="assets/WhitePaper_Power_CBM_LT_EN.pdf"><img src="assets/download_whitepaper_button.png"></a></button>
                   </div>
                 </div>
               </div>
@@ -193,6 +193,12 @@
       </div>
     </div>
     <script>
+      var w = "854";
+      var h = "480";
+      if ($(window).width() < 769) {
+      	w = "560";
+      	h = "315";
+      }
       var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -201,8 +207,8 @@
       var player;
       function onYouTubeIframeAPIReady(){
       	player = new YT.Player('player', {
-      		width: "854",
-      		height: "480",
+      		width: w,
+      		height: h,
       		videoId: "BfcPSm1Sqn0"
       		//- playerVars: {"autoplay": 0},
       		//- events: {

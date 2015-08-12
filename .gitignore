@@ -41,3 +41,5 @@ Thumbs.db
 
 # Dependency directory #
 node_modules
+.sass-cache
+_notes

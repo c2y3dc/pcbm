@@ -64,15 +64,6 @@ body
 	position: absolute
 	display: none
 
-// .content
-// 	h1
-// 		font-size: 2rem
-// 		// font-weight: 200
-// 	p
-// 		font-size: 1.5rem
-// 		// font-weight: 100
-// 	li
-// 		font-size: 1rem
 .panel-body
 	color: black
 .content-block-two
@@ -97,6 +88,7 @@ button
 	transition: opacity .3s ease
 .greybgform
 	text-transform: uppercase
+	line-height: 2rem
 	color: rgba(96,96,98,1)
 	background-color: rgba(246,246,247,1)
 
@@ -160,24 +152,12 @@ ul.social li
 	-o-transition: all 0.15s ease-in-out
 	transition: all 0.15s ease-in-out
 
-.tiles:hover,
-.tiles:active,
-.tiles.active,
-.tiles:focus,
-.tiles:active:focus,
-.tiles.active:focus,
-.strips:hover,
-.strips:active,
-.strips.active,
-.strips:focus,
-.strips:active:focus,
-.strips.active:focus,
-.social > li:hover,
-.social > li:active,
-.social > li.active,
-.social > li:focus,
-.social > li:active:focus,
-.social > li.active:focus 
+.center-block:hover,
+.center-block:active,
+.center-block.active,
+.center-block:focus,
+.center-block:active:focus,
+.center-block.active:focus
 	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55)
 	-moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55)
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55)
@@ -219,32 +199,7 @@ ul.social li
 	white-space: pre-wrap
 	text-align: justify
 	max-width: 40rem
-// .scroll-top-wrapper
-// 	position: fixed
-// 	opacity: 0
-// 	visibility: hidden
-// 	overflow: hidden
-// 	text-align: center
-// 	z-index: 99999
-// 	background-color: #777777
-// 	color: #eeeeee
-// 	width: 50px
-// 	height: 48px
-// 	line-height: 48px
-// 	right: 30px
-// 	bottom: 30px
-// 	padding-top: 2px
-// 	border-radius: 10px
-// 	transition: all 0.5s ease-in-out
-// .scroll-top-wrapper:hover
-// 	background-color: #888888
-// .scroll-top-wrapper.show
-// 	visibility: visible
-// 	cursor: pointer
-// 	opacity: 1
-// .scroll-top-wrapper
-// 	i.fa
-// 		line-height: inherit
+
 .hero
 	position: relative
 	height: 90rem
@@ -266,8 +221,18 @@ ul.social li
 		// top: 9rem
 		// left: 0
 .tt
-	color: rgb(200,200,200)
-	font-weight: 500
+	color: rgb(25,25,25)
+	font-weight: 300
+// .yt
+// 	position: absolute
+// 	margin: auto
+// 	top: 50%
+// 	left: 50%
+// 	transform: translate(-50%, -50%)
+// #player
+// 	display: block
+// 	width: 100%
+// 	height: 100%
 
 @media screen and (min-width: 768px)
 	body
@@ -299,9 +264,16 @@ ul.social li
 
 		@for $i from 1 through 5
 			&:nth-child(#{$i})
-				@include transition-delay(0.25s * $i)
+				@include transition-delay(0.5s * $i)
 		#s3:hover &
 			@include opacity(1)
 	.d1
 		opacity: 0.2
 		display: block
+	.bigh1
+		font-size: 5rem
+		font-weight: 100
+	.formheading
+		p
+			font-size: 1.8rem
+			// line-height: 0.25rem

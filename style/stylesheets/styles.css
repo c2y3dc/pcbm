@@ -11,7 +11,7 @@ body {
 
 /* line 9, ../sass/styles.sass */
 .navbar-default {
-  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.3);
   margin: 0;
 }
 
@@ -304,7 +304,7 @@ ul.social li {
 /* line 206, ../sass/styles.sass */
 .hero-caption, .hero-button {
   position: absolute;
-  padding-top: 6rem;
+  padding-top: 30rem;
   text-align: center;
   top: 0;
   left: 0;
@@ -315,7 +315,7 @@ ul.social li {
 
 /* line 215, ../sass/styles.sass */
 .hero-button {
-  padding-top: 45rem;
+  padding-top: 50rem;
 }
 
 /* line 218, ../sass/styles.sass */
@@ -329,35 +329,55 @@ ul.social li {
   font-weight: 300;
 }
 
+/* line 227, ../sass/styles.sass */
+.yellow-button {
+  font-weight: 300;
+  width: 30rem;
+  height: 6rem;
+  font-size: 2.5rem;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmY2I5MzYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZhYTYwMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #fcb936), color-stop(50%, #faa603));
+  background-image: -moz-linear-gradient(top, #fcb936 50%, #faa603 50%);
+  background-image: -webkit-linear-gradient(top, #fcb936 50%, #faa603 50%);
+  background-image: linear-gradient(to bottom, #fcb936 50%, #faa603 50%);
+}
+
+/* line 235, ../sass/styles.sass */
+button a, button a:link, button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 238, ../sass/styles.sass */
+  /* line 240, ../sass/styles.sass */
   body {
     padding-top: 90px;
   }
 
-  /* line 241, ../sass/styles.sass */
+  /* line 243, ../sass/styles.sass */
   .content h1 {
     font-size: 4rem;
     font-weight: 200;
   }
-  /* line 244, ../sass/styles.sass */
+  /* line 246, ../sass/styles.sass */
   .content p {
     font-size: 2.5rem;
     font-weight: 100;
   }
-  /* line 247, ../sass/styles.sass */
+  /* line 249, ../sass/styles.sass */
   .content li {
     font-size: 1.8rem;
   }
 
-  /* line 249, ../sass/styles.sass */
+  /* line 251, ../sass/styles.sass */
   .tooltip-inner {
     font-size: 2rem;
     font-weight: 100;
     max-width: none;
   }
 
-  /* line 253, ../sass/styles.sass */
+  /* line 255, ../sass/styles.sass */
   .diacon {
     position: relative;
     overflow: hidden;
@@ -365,71 +385,71 @@ ul.social li {
     width: 1200px;
   }
 
-  /* line 258, ../sass/styles.sass */
+  /* line 260, ../sass/styles.sass */
   .stagg {
-    -moz-transition: opacity 1.25s;
-    -o-transition: opacity 1.25s;
-    -webkit-transition: opacity 1.25s;
-    transition: opacity 1.25s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     position: absolute;
     display: block;
   }
-  /* line 266, ../sass/styles.sass */
+  /* line 268, ../sass/styles.sass */
   .stagg:nth-child(1) {
-    -moz-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-  }
-  /* line 266, ../sass/styles.sass */
-  .stagg:nth-child(2) {
-    -moz-transition-delay: 1s;
-    -o-transition-delay: 1s;
-    -webkit-transition-delay: 1s;
-    transition-delay: 1s;
-  }
-  /* line 266, ../sass/styles.sass */
-  .stagg:nth-child(3) {
-    -moz-transition-delay: 1.5s;
-    -o-transition-delay: 1.5s;
-    -webkit-transition-delay: 1.5s;
-    transition-delay: 1.5s;
-  }
-  /* line 266, ../sass/styles.sass */
-  .stagg:nth-child(4) {
-    -moz-transition-delay: 2s;
-    -o-transition-delay: 2s;
-    -webkit-transition-delay: 2s;
-    transition-delay: 2s;
-  }
-  /* line 266, ../sass/styles.sass */
-  .stagg:nth-child(5) {
-    -moz-transition-delay: 2.5s;
-    -o-transition-delay: 2.5s;
-    -webkit-transition-delay: 2.5s;
-    transition-delay: 2.5s;
+    -moz-transition-delay: 0.33s;
+    -o-transition-delay: 0.33s;
+    -webkit-transition-delay: 0.33s;
+    transition-delay: 0.33s;
   }
   /* line 268, ../sass/styles.sass */
+  .stagg:nth-child(2) {
+    -moz-transition-delay: 0.66s;
+    -o-transition-delay: 0.66s;
+    -webkit-transition-delay: 0.66s;
+    transition-delay: 0.66s;
+  }
+  /* line 268, ../sass/styles.sass */
+  .stagg:nth-child(3) {
+    -moz-transition-delay: 0.99s;
+    -o-transition-delay: 0.99s;
+    -webkit-transition-delay: 0.99s;
+    transition-delay: 0.99s;
+  }
+  /* line 268, ../sass/styles.sass */
+  .stagg:nth-child(4) {
+    -moz-transition-delay: 1.32s;
+    -o-transition-delay: 1.32s;
+    -webkit-transition-delay: 1.32s;
+    transition-delay: 1.32s;
+  }
+  /* line 268, ../sass/styles.sass */
+  .stagg:nth-child(5) {
+    -moz-transition-delay: 1.65s;
+    -o-transition-delay: 1.65s;
+    -webkit-transition-delay: 1.65s;
+    transition-delay: 1.65s;
+  }
+  /* line 270, ../sass/styles.sass */
   #s3:hover .stagg {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 
-  /* line 270, ../sass/styles.sass */
+  /* line 272, ../sass/styles.sass */
   .d1 {
     opacity: 0.2;
     display: block;
   }
 
-  /* line 273, ../sass/styles.sass */
+  /* line 275, ../sass/styles.sass */
   .bigh1 {
     font-size: 5rem;
     font-weight: 100;
   }
 
-  /* line 277, ../sass/styles.sass */
+  /* line 279, ../sass/styles.sass */
   .formheading p {
     font-size: 1.8rem;
   }

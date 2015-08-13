@@ -7,7 +7,7 @@ body
 	height: 100%
 
 .navbar-default
-	box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.3)
+	box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.3)
 	margin: 0
 
 // .tallone
@@ -205,7 +205,7 @@ ul.social li
 	height: 90rem
 .hero-caption, .hero-button
 	position: absolute
-	padding-top: 6rem
+	padding-top: 30rem
 	text-align: center
 	top: 0
 	left: 0
@@ -213,7 +213,7 @@ ul.social li
 	color: white
 	z-index: 1
 .hero-button
-	padding-top: 45rem
+	padding-top: 50rem
 #s1
 	video
 		// position: absolute
@@ -223,16 +223,18 @@ ul.social li
 .tt
 	color: rgb(25,25,25)
 	font-weight: 300
-// .yt
-// 	position: absolute
-// 	margin: auto
-// 	top: 50%
-// 	left: 50%
-// 	transform: translate(-50%, -50%)
-// #player
-// 	display: block
-// 	width: 100%
-// 	height: 100%
+
+.yellow-button
+	font-weight: 300
+	width: 30rem
+	height: 6rem
+	font-size: 2.5rem
+	+background-image(linear-gradient(to bottom, #fcb936 50%, #faa603 50%))
+
+button
+	a, a:link, a:visited
+		color: white
+		text-decoration: none
 
 @media screen and (min-width: 768px)
 	body
@@ -256,7 +258,7 @@ ul.social li
 		height: 614px
 		width: 1200px
 	.stagg
-		@include transition(opacity 1.25s)
+		@include transition(opacity 1s)
 		@include opacity(0)
 		// @include absolute
 		position: absolute
@@ -264,7 +266,7 @@ ul.social li
 
 		@for $i from 1 through 5
 			&:nth-child(#{$i})
-				@include transition-delay(0.5s * $i)
+				@include transition-delay(0.33s * $i)
 		#s3:hover &
 			@include opacity(1)
 	.d1

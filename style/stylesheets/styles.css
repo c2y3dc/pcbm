@@ -410,6 +410,18 @@ button a, button a:link, button a:visited {
   }
 
   /* line 278, ../sass/styles.sass */
+  .bigh1 {
+    font-size: 5rem;
+    font-weight: 100;
+  }
+
+  /* line 282, ../sass/styles.sass */
+  .formheading p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 286, ../sass/styles.sass */
   .diacon {
     position: relative;
     overflow: hidden;
@@ -417,7 +429,7 @@ button a, button a:link, button a:visited {
     width: 1200px;
   }
 
-  /* line 283, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg {
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
@@ -428,61 +440,50 @@ button a, button a:link, button a:visited {
     position: absolute;
     display: block;
   }
-  /* line 291, ../sass/styles.sass */
+  /* line 299, ../sass/styles.sass */
   .stagg:nth-child(1) {
     -moz-transition-delay: 0.33s;
     -o-transition-delay: 0.33s;
     -webkit-transition-delay: 0.33s;
     transition-delay: 0.33s;
   }
-  /* line 291, ../sass/styles.sass */
+  /* line 299, ../sass/styles.sass */
   .stagg:nth-child(2) {
     -moz-transition-delay: 0.66s;
     -o-transition-delay: 0.66s;
     -webkit-transition-delay: 0.66s;
     transition-delay: 0.66s;
   }
-  /* line 291, ../sass/styles.sass */
+  /* line 299, ../sass/styles.sass */
   .stagg:nth-child(3) {
     -moz-transition-delay: 0.99s;
     -o-transition-delay: 0.99s;
     -webkit-transition-delay: 0.99s;
     transition-delay: 0.99s;
   }
-  /* line 291, ../sass/styles.sass */
+  /* line 299, ../sass/styles.sass */
   .stagg:nth-child(4) {
     -moz-transition-delay: 1.32s;
     -o-transition-delay: 1.32s;
     -webkit-transition-delay: 1.32s;
     transition-delay: 1.32s;
   }
-  /* line 291, ../sass/styles.sass */
+  /* line 299, ../sass/styles.sass */
   .stagg:nth-child(5) {
     -moz-transition-delay: 1.65s;
     -o-transition-delay: 1.65s;
     -webkit-transition-delay: 1.65s;
     transition-delay: 1.65s;
   }
-  /* line 293, ../sass/styles.sass */
+  /* line 301, ../sass/styles.sass */
   #s3:hover .stagg {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 
-  /* line 295, ../sass/styles.sass */
+  /* line 303, ../sass/styles.sass */
   .d1 {
     opacity: 0.2;
     display: block;
-  }
-
-  /* line 298, ../sass/styles.sass */
-  .bigh1 {
-    font-size: 5rem;
-    font-weight: 100;
-  }
-
-  /* line 302, ../sass/styles.sass */
-  .formheading p {
-    font-size: 1.8rem;
   }
 }

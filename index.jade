@@ -242,9 +242,18 @@ html(lang="en")
 			var w = "864";
 			var h = "486";
 			$(window).on('resize',function(){location.reload();});
-			if ($(window).width() < 769) {
-				w = "568";
-				h = "320";
+			var width = $(window).width();
+			if (width < 975) {
+				if(width > 768){
+					w = "568";
+					h = "320";
+				}else if(width > 400){
+					w = "550";
+					h = "310";
+				}else{
+					w = "300";
+					h = "169";
+				}
 			}
 			var tag = document.createElement('script');
 			tag.src = "https://www.youtube.com/iframe_api";
@@ -266,8 +275,6 @@ html(lang="en")
 					});
 					players.push(player);
 				}
-				console.log("inside YTAPIR func", players);
-				console.log("vids obj", vids)
 			}
 			function stopVideo(i){
 				players[i].stopVideo();
@@ -304,6 +311,6 @@ html(lang="en")
 
 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
 		script(src="main.js")
 		script(src="fix.js")

@@ -30,7 +30,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(../../assets/section_1.png) no-repeat center center fixed
+	background: url(../../assets/section_1.png) no-repeat top left fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -41,7 +41,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(../../assets/section_2.png) no-repeat center center fixed
+	background: url(../../assets/section_2.png) no-repeat top right fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -52,7 +52,7 @@ body
 	padding: 0px
 	margin-bottom: 0px
 	color: white
-	background: url(../../assets/section_3.jpg) no-repeat center center fixed
+	background: url(../../assets/section_3.jpg) no-repeat top left fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
@@ -243,9 +243,21 @@ ul.social li
 	+background-image(linear-gradient(to bottom, #fcb936 50%, #faa603 50%))
 
 button
+	color: white
 	a, a:link, a:visited
 		color: white
 		text-decoration: none
+
+.modal
+	position: fixed
+	top: 0
+	margin: 0
+	padding: 1rem
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 1050
+	width: 96%
 
 @media screen and (min-width: 768px)
 	body

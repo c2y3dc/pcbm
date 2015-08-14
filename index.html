@@ -40,8 +40,7 @@
           <h1 class="bigh1">Optimizing Plant Operations with Condition Based Maintenance</h1>
         </div>
         <div class="hero-button">
-          <p><a id="adv" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-xl">See the Advantages <span aria-hiddne="true" class="glyphicon glyphicon-triangle-right"></span></a>
-          </p>
+          <p><a type="button" data-toggle="modal" data-target="#myModal0" class="btn btn-primary btn-xl">See the Advantages <span aria-hiddne="true" class="glyphicon glyphicon-triangle-right"></span></a></p>
         </div>
       </container>
     </div>
@@ -125,7 +124,7 @@
               <div class="panel panel-default">
                 <div class="panel-body text-center"><img src="assets/section_6_thumbail_1.png" class="diagram">
                   <p><strong>Demo</strong> Condition-Based Maintenance Demo Using the PI System</p>
-                  <button type="submit" class="yellow-button center-block trans"><a>View the Demo</a></button>
+                  <button type="button" data-toggle="modal" data-target="#myModal1" class="yellow-button center-block trans">View the Demo</button>
                 </div>
               </div>
             </div>
@@ -176,16 +175,34 @@
         </div>
       </div>
     </div>
-    <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+    <div id="myModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
       <div role="document" class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span aria-hidden="true">&times;</span></button>
-            <h4 id="myModalLabel" class="modal-title">See the Advantages</h4>
+            <h4 id="myModal0Label" class="modal-title">See the Advantages</h4>
           </div>
           <div class="modal-body">
             <div class="yt">
-              <div id="player"></div>
+              <div id="player0"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="myModal1Label" class="modal-title">Demo</h4>
+          </div>
+          <div class="modal-body">
+            <div class="yt">
+              <div id="player1"></div>
             </div>
           </div>
           <div class="modal-footer">
@@ -197,6 +214,7 @@
     <script>
       var w = "864";
       var h = "486";
+      $(window).on('resize',function(){location.reload();});
       if ($(window).width() < 769) {
       	w = "568";
       	h = "320";
@@ -206,53 +224,62 @@
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       
-      var player;
-      function onYouTubeIframeAPIReady(){
-      	player = new YT.Player('player', {
-      		width: w,
-      		height: h,
-      		videoId: "BfcPSm1Sqn0"
-      		//- playerVars: {"autoplay": 0},
-      		//- events: {
-      		//- 	"onReady": onPlayerReady,
-      		//- 	"onStateChange": onPlayerStateChange
-      		//- }
-      	});
+      var vids = {
+      	0 : "BfcPSm1Sqn0",
+      	1 : "p0UilUJUJb4"
       }
-      $("#myModal").on('shown.bs.modal', function() {
-      	if (typeof player.playVideo == 'function') {
-      		player.playVideo();
+      var players = [];
+      
+      function onYouTubeIframeAPIReady(){
+      	for(var vid in vids){
+      		var player = new YT.Player('player' + vid, {
+      			width: w,
+      			height: h,
+      			videoId: vids[vid]
+      		});
+      		players.push(player);
+      	}
+      	console.log("inside YTAPIR func", players);
+      	console.log("vids obj", vids)
+      }
+      function stopVideo(i){
+      	players[i].stopVideo();
+      }
+      $("#myModal0").on('shown.bs.modal', function() {
+      	if (typeof players[0].playVideo == 'function') {
+      		players[0].playVideo();
       	} else {
       	var fn = function() {
-      		player.playVideo();
+      		players[0].playVideo();
       	};
       		setTimeout(fn, 200);
       	}
       });
       
-      $("#myModal").on('hidden.bs.modal', function(e) {
-      	player.stopVideo();
+      $("#myModal0").on('hidden.bs.modal', function(e) {
+      	players[0].stopVideo(0);
       });
       
-      function onPlayerReady(event){
-      	//- event.target.setVolume(100);
-      	event.target.playVideo();
-      }
-      
-      var done = false;
-      function onPlayerStateChange(event){
-      	if(event.data == YT.PlayerState.PLAYING && !done){
-      		setTimeout(stopVideo, 500);
-      		done = true;
+      $("#myModal1").on('shown.bs.modal', function() {
+      	if (typeof players[1].playVideo == 'function') {
+      		players[1].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[1].playVideo();
+      	};
+      		setTimeout(fn, 200);
       	}
-      }
-      function stopVideo(){
-      	player.stopVideo();
-      }
+      });
+      
+      $("#myModal1").on('hidden.bs.modal', function(e) {
+      	players[1].stopVideo(1);
+      });
+      
       
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="main.js"></script>
+    <script src="fix.js"></script>
   </body>
 </html>

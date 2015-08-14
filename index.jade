@@ -67,21 +67,7 @@ html(lang="en")
 					h1.bigh1 Optimizing Plant Operations with Condition Based Maintenance
 				.hero-button
 					p
-						//- button.btn.btn-primary.btn-lg#adv(type="button", data-toggle="modal", href="#openModal2") See the Advantages
-						//- Work in Progress
-						//- #openModal12.modalDialog
-						//- 	a.close(href="#close", onclick="parentWinRefreshDelay()") X
-						//- 		img(src="assets/OSIsoft_logo_only.png", alt="OSIsoft Logo", border="0")
-						//- 	video#openModal-video(width='640', height='360', poster='', controls='controls', preload='none')
-						//- 		source(src='http://cdn.osisoft.com/corp/en/media/videos/UC2015_CSU_MoraOrtiz_WaterIndustryMicrosite_v3a_EF_web.mp4')
-						//- 		object#openModal-object(width='640', height='360', type='application/x-shockwave-flash', data='http://flashfox.googlecode.com/svn/trunk/flashfox.swf')
-						//- 			param(name='movie', value='http://flashfox.googlecode.com/svn/trunk/flashfox.swf')
-						//- 			param(name="allowfullscreen", value="true")
-						//- 			param(name="wmode", value="transparent")
-						//- 			param(name="flashvars", value='controlbar=over&src=http://cdn.osisoft.com/corp/en/media/webinars/2014Webinar_Microsoft_Smith_IntelligentBuildingsPredictiveAnalyticsAndFaultDetectionTheEssentialstoAchievingEnergyEfficiency_v2.mp4')
-						//- 	h2 OSIsoft, LLC, 777 Davis St, San Leandro, CA 94577 | www.osisoft.com
-
-						a.btn.btn-primary.btn-xl#adv(type="button", data-toggle="modal", data-target="#myModal") See the Advantages 
+						a.btn.btn-primary.btn-xl(type="button", data-toggle="modal", data-target="#myModal0") See the Advantages 
 							span(aria-hiddne="true").glyphicon.glyphicon-triangle-right
 		.container-fluid.widthfix#s2
 			.content-space-one
@@ -165,8 +151,7 @@ html(lang="en")
 									p <strong>Demo</strong> Condition-Based Maintenance Demo Using the PI System
 									//- button(type="submit").center-block.trans
 									//- 	img(src="assets/section_6_view_the_demo_button.png")
-									button(type="submit").yellow-button.center-block.trans
-										a View the Demo
+									button(type="button", data-toggle="modal", data-target="#myModal1").yellow-button.center-block.trans View the Demo
 						.col-sm-12.col-md-6								
 							.panel.panel-default
 								.panel-body.text-center
@@ -228,21 +213,35 @@ html(lang="en")
 						li.social_users.trans
 							a(href="http://community.osisoft.com/", target="_blank")
 
-		.modal.fade#myModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
+		.modal.fade#myModal0(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
 			.modal-dialog.modal-lg(role="document")
 				.modal-content
 					.modal-header
 						button.close(type="button",data-dismiss="modal",aria-hidden="true")
 							#[span(aria-hidden="true") &times;]
-						h4.modal-title#myModalLabel See the Advantages
+						h4.modal-title#myModal0Label See the Advantages
 					.modal-body
 						.yt
-							#player
+							#player0
+					.modal-footer
+						button.btn.btn-primary(data-dismiss="modal") Close
+
+		.modal.fade#myModal1(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
+			.modal-dialog.modal-lg(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button",data-dismiss="modal",aria-hidden="true")
+							#[span(aria-hidden="true") &times;]
+						h4.modal-title#myModal1Label Demo
+					.modal-body
+						.yt
+							#player1
 					.modal-footer
 						button.btn.btn-primary(data-dismiss="modal") Close
 		script.
 			var w = "864";
 			var h = "486";
+			$(window).on('resize',function(){location.reload();});
 			if ($(window).width() < 769) {
 				w = "568";
 				h = "320";
@@ -252,50 +251,59 @@ html(lang="en")
 			var firstScriptTag = document.getElementsByTagName('script')[0];
 			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-			var player;
-			function onYouTubeIframeAPIReady(){
-				player = new YT.Player('player', {
-					width: w,
-					height: h,
-					videoId: "BfcPSm1Sqn0"
-					//- playerVars: {"autoplay": 0},
-					//- events: {
-					//- 	"onReady": onPlayerReady,
-					//- 	"onStateChange": onPlayerStateChange
-					//- }
-				});
+			var vids = {
+				0 : "BfcPSm1Sqn0",
+				1 : "p0UilUJUJb4"
 			}
-			$("#myModal").on('shown.bs.modal', function() {
-				if (typeof player.playVideo == 'function') {
-					player.playVideo();
+			var players = [];
+
+			function onYouTubeIframeAPIReady(){
+				for(var vid in vids){
+					var player = new YT.Player('player' + vid, {
+						width: w,
+						height: h,
+						videoId: vids[vid]
+					});
+					players.push(player);
+				}
+				console.log("inside YTAPIR func", players);
+				console.log("vids obj", vids)
+			}
+			function stopVideo(i){
+				players[i].stopVideo();
+			}
+			$("#myModal0").on('shown.bs.modal', function() {
+				if (typeof players[0].playVideo == 'function') {
+					players[0].playVideo();
 				} else {
 				var fn = function() {
-					player.playVideo();
+					players[0].playVideo();
 				};
 					setTimeout(fn, 200);
 				}
 			});
 
-			$("#myModal").on('hidden.bs.modal', function(e) {
-				player.stopVideo();
+			$("#myModal0").on('hidden.bs.modal', function(e) {
+				players[0].stopVideo(0);
 			});
 
-			function onPlayerReady(event){
-				//- event.target.setVolume(100);
-				event.target.playVideo();
-			}
-
-			var done = false;
-			function onPlayerStateChange(event){
-				if(event.data == YT.PlayerState.PLAYING && !done){
-					setTimeout(stopVideo, 500);
-					done = true;
+			$("#myModal1").on('shown.bs.modal', function() {
+				if (typeof players[1].playVideo == 'function') {
+					players[1].playVideo();
+				} else {
+				var fn = function() {
+					players[1].playVideo();
+				};
+					setTimeout(fn, 200);
 				}
-			}
-			function stopVideo(){
-				player.stopVideo();
-			}
+			});
+
+			$("#myModal1").on('hidden.bs.modal', function(e) {
+				players[1].stopVideo(1);
+			});
+
 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
 		script(src="main.js")
+		script(src="fix.js")

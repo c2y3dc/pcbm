@@ -8,7 +8,6 @@ $(document).ready(function() {
         $('.navbar-default').addClass('navbar-fixed-top');
     }
 
-
     $(window).scroll(function() {
         scrollNav();
     });

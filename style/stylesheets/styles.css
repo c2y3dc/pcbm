@@ -40,7 +40,7 @@ body {
   padding: 0px;
   margin-bottom: 0px;
   color: white;
-  background: url(../../assets/section_1.png) no-repeat center center fixed;
+  background: url(../../assets/section_1.png) no-repeat top left fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -54,7 +54,7 @@ body {
   padding: 0px;
   margin-bottom: 0px;
   color: white;
-  background: url(../../assets/section_2.png) no-repeat center center fixed;
+  background: url(../../assets/section_2.png) no-repeat top right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -68,7 +68,7 @@ body {
   padding: 0px;
   margin-bottom: 0px;
   color: white;
-  background: url(../../assets/section_3.jpg) no-repeat center center fixed;
+  background: url(../../assets/section_3.jpg) no-repeat top left fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -358,41 +358,58 @@ ul.social li {
   background-image: linear-gradient(to bottom, #fcb936 50%, #faa603 50%);
 }
 
-/* line 246, ../sass/styles.sass */
+/* line 245, ../sass/styles.sass */
+button {
+  color: white;
+}
+/* line 247, ../sass/styles.sass */
 button a, button a:link, button a:visited {
   color: white;
   text-decoration: none;
 }
 
+/* line 251, ../sass/styles.sass */
+.modal {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  width: 96%;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 251, ../sass/styles.sass */
+  /* line 263, ../sass/styles.sass */
   body {
     padding-top: 90px;
   }
 
-  /* line 254, ../sass/styles.sass */
+  /* line 266, ../sass/styles.sass */
   .content h1 {
     font-size: 4rem;
     font-weight: 200;
   }
-  /* line 257, ../sass/styles.sass */
+  /* line 269, ../sass/styles.sass */
   .content p {
     font-size: 2.5rem;
     font-weight: 100;
   }
-  /* line 260, ../sass/styles.sass */
+  /* line 272, ../sass/styles.sass */
   .content li {
     font-size: 1.8rem;
   }
 
-  /* line 262, ../sass/styles.sass */
+  /* line 274, ../sass/styles.sass */
   .tooltip-inner {
     font-size: 2rem;
     font-weight: 100;
     max-width: none;
   }
 
-  /* line 266, ../sass/styles.sass */
+  /* line 278, ../sass/styles.sass */
   .diacon {
     position: relative;
     overflow: hidden;
@@ -400,7 +417,7 @@ button a, button a:link, button a:visited {
     width: 1200px;
   }
 
-  /* line 271, ../sass/styles.sass */
+  /* line 283, ../sass/styles.sass */
   .stagg {
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
@@ -411,60 +428,60 @@ button a, button a:link, button a:visited {
     position: absolute;
     display: block;
   }
-  /* line 279, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg:nth-child(1) {
     -moz-transition-delay: 0.33s;
     -o-transition-delay: 0.33s;
     -webkit-transition-delay: 0.33s;
     transition-delay: 0.33s;
   }
-  /* line 279, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg:nth-child(2) {
     -moz-transition-delay: 0.66s;
     -o-transition-delay: 0.66s;
     -webkit-transition-delay: 0.66s;
     transition-delay: 0.66s;
   }
-  /* line 279, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg:nth-child(3) {
     -moz-transition-delay: 0.99s;
     -o-transition-delay: 0.99s;
     -webkit-transition-delay: 0.99s;
     transition-delay: 0.99s;
   }
-  /* line 279, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg:nth-child(4) {
     -moz-transition-delay: 1.32s;
     -o-transition-delay: 1.32s;
     -webkit-transition-delay: 1.32s;
     transition-delay: 1.32s;
   }
-  /* line 279, ../sass/styles.sass */
+  /* line 291, ../sass/styles.sass */
   .stagg:nth-child(5) {
     -moz-transition-delay: 1.65s;
     -o-transition-delay: 1.65s;
     -webkit-transition-delay: 1.65s;
     transition-delay: 1.65s;
   }
-  /* line 281, ../sass/styles.sass */
+  /* line 293, ../sass/styles.sass */
   #s3:hover .stagg {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
 
-  /* line 283, ../sass/styles.sass */
+  /* line 295, ../sass/styles.sass */
   .d1 {
     opacity: 0.2;
     display: block;
   }
 
-  /* line 286, ../sass/styles.sass */
+  /* line 298, ../sass/styles.sass */
   .bigh1 {
     font-size: 5rem;
     font-weight: 100;
   }
 
-  /* line 290, ../sass/styles.sass */
+  /* line 302, ../sass/styles.sass */
   .formheading p {
     font-size: 1.8rem;
   }

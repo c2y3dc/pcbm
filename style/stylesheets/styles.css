@@ -359,13 +359,14 @@ ul.social li {
 }
 
 /* line 245, ../sass/styles.sass */
-button {
-  color: white;
-}
-/* line 247, ../sass/styles.sass */
-button a, button a:link, button a:visited {
+a, a:link, a:visited {
   color: white;
   text-decoration: none;
+}
+
+/* line 248, ../sass/styles.sass */
+button {
+  color: white;
 }
 
 /* line 251, ../sass/styles.sass */

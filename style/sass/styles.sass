@@ -236,10 +236,10 @@ ul.social li
 	font-weight: 300
 
 .yellow-button
-	font-weight: 300
-	width: 30rem
-	height: 6rem
-	font-size: 2.5rem
+	width: 25rem
+	height: 5rem
+	font-size: 2rem
+	font-weight: 200
 	+background-image(linear-gradient(to bottom, #fcb936 50%, #faa603 50%))
 
 a, a:link, a:visited
@@ -264,6 +264,11 @@ button
 		color: black
 		a
 			color: rgb(51,122,183)
+@media only screen and (max-width: 479px) and (min-width: 0px)
+	#s1
+		video
+			display: none
+		background: url(../../assets/freeze_frame.jpg) no-repeat center center fixed
 
 @media screen and (min-width: 768px)
 	body
@@ -302,6 +307,12 @@ button
 		z-index: 1
 	.hero-button
 		padding-top: 50rem
+	.yellow-button
+		width: 30rem
+		height: 6rem
+		font-size: 2.5rem
+		font-weight: 300
+
 @media screen and (min-width: 1300px)
 	.diacon
 		position: relative

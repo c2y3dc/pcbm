@@ -214,7 +214,7 @@
     <script>
       var w = "864";
       var h = "486";
-      $(window).on('resize',function(){location.reload();});
+      //- $(window).on('resize',function(){location.reload();});
       var width = $(window).width();
       if (width < 975) {
       	if(width > 768){
@@ -223,9 +223,12 @@
       	}else if(width > 400){
       		w = "550";
       		h = "310";
-      	}else{
+      	}else if (width > 350){
       		w = "300";
       		h = "169";
+      	}else{
+      		w = "213";
+      		h = "120";
       	}
       }
       var tag = document.createElement('script');

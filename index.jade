@@ -10,6 +10,8 @@ html(lang="en")
 		//- link(rel="stylesheet", href="styles.css")
 		link(rel="stylesheet", href="style/stylesheets/styles.css")
 		link(href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700", rel='stylesheet', type='text/css')
+		style.
+			[data-sr]{visibility: hidden;}
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(src="//app-sjh.marketo.com/js/forms2/js/forms2.min.js")
 
@@ -64,23 +66,29 @@ html(lang="en")
 				source(src="https://www.googledrive.com/host/0By85OGeKkV13alpjc1QzQVJJQ1E", type="video/mp4")
 			container
 				.hero-caption
-					h1.bigh1 Optimizing Plant Operations with Condition Based Maintenance
+					h1.bigh1
+						span(data-sr="wait .5s, move 16px scale up 20%, over 1.5s") Optimizing Plant Operations with Condition Based Maintenance
 				.hero-button
 					p
-						a.btn.btn-primary.btn-xl(type="button", data-toggle="modal", data-target="#myModal0") See the Advantages 
+						a.btn.btn-primary.btn-xl(type="button", data-toggle="modal", data-target="#myModal0", data-sr="wait 1.5s") See the Advantages 
 							span(aria-hiddne="true").glyphicon.glyphicon-triangle-right
+				.hero-arrow
+					.glyphicon.glyphicon-chevron-down(data-sr="wait 1.7s")
 		.container-fluid.widthfix#s2
 			.content-space-one
 				.container.content
-					h1 The PI System enables Power Generation suppliers to better manage one unit or an entire fleet of generating units
-					p A growing number of utility operators are considering the adoption of condition-based maintenance (CBM) and other proactive strategies that are driven by the actual condition of an asset rather than planned calendar- or time-based maintenance schedules. CBM promises to:
-					ul
+					h1 
+						span(data-sr="wait .2s") The PI System enables Power Generation suppliers to better manage one unit or an entire fleet of generating units
+					p 
+						span(data-sr="wait .3s") A growing number of utility operators are considering the adoption of condition-based maintenance (CBM) and other proactive strategies that are driven by the actual condition of an asset rather than planned calendar- or time-based maintenance schedules. CBM promises to:
+					ul(data-sr="wait .4s")
 						li eliminate unnecessary maintenance
 						li minimize unexpected failures
 						li maximize use of resources
 						li increase reliability and availability
 						li support life extetnsion
-					h2 Visit us and the POWER-GEN Show in Las Vegas, December 8-10 at Booth #8235
+					h2 
+						span(data-sr="wait .6s") Visit us and the POWER-GEN Show in Las Vegas, December 8-10 at Booth #8235
 		.container-fluid.widthfix#s3
 			.content-block-one
 				.container
@@ -91,33 +99,36 @@ html(lang="en")
 						img(src="assets/4.jpg").diagram.stagg.d5
 						img(src="assets/5.jpg").diagram.stagg.d1
 					.content
-						h1 The 6 Steps of CBM with the PI System
-						p Using the PI System for CBM provides multiple advantages. For instance it:
-						ul
+						h1 
+							span(data-sr="wait .5s") The 6 Steps of CBM with the PI System
+						p(data-sr="wait .7s") Using the PI System for CBM provides multiple advantages. For instance it:
+						ul(data-sr="wait .8s")
 							li alters the process from a static or periodic assessment to an online, dynamic, real-time assessment of asset health 
 							li provides a comprehensive data environment that can be used to conduct a more complete analysis of current conditions
 							li transforms real-time data into useful information and creates event frames to supplement this highly detailed data analysis
 							li provides the ability to efficiently perform root cause analysis, in case of a failure
 		.container-fluid.widthfix#s4
 			.content-space-two
-				.container.content
-					h1 "<strong>Avoiding a catastrophic failure</strong> is quite a good achievement, but repairing those transformers <strong>will save us about five million Euros</strong>; that makes it even better.” <br />  
-					p - Kimmo Nepala, Planning Engineer, <strong>Fingrid Oyj</strong>
+				.container.content(data-sr="wait .2s")
+					h1 
+						span "<strong>Avoiding a catastrophic failure</strong> is quite a good achievement, but repairing those transformers <strong>will save us about five million Euros</strong>; that makes it even better.” <br />  
+					p(data-sr="wait .4s") - Kimmo Nepala, Planning Engineer, <strong>Fingrid Oyj</strong>
 					//- button(type="submit").center-block.trans.floatright
 					//- 	a(href="assets/CB_Fingrid_LT_EN_FINAL.pdf")
 					//- 		img(src="assets/fingrid_story_button.png")
 					a(href="assets/CB_Fingrid_LT_EN_FINAL.pdf").button-anchor
-						button(type="submit").yellow-button.center-block.trans.floatright Read Fingrid OYJ's Story
+						button(type="submit", data-sr="wait .6s").yellow-button.center-block.trans.floatright Read Fingrid OYJ's Story
 
 
 		.container-fluid.widthfix#s5
 			.content-block-one
 				.container
 					.content
-						h1 <strong>Learn More: Real-Time Asset Monitoring for Power Generation</strong>
-						p The PI System provides power generators with a universal data infrastructure that is capable of collecting, managing and analyzing information from multiple isolated sources across the enterprise and presenting that data in a way that allows management, engineering, operations and maintenance staff to share information and solve problems faster.
+						h1 
+							span(data-sr="wait .3s, move 16px scale up 20%, over 1.2s") <strong>Learn More: Real-Time Asset Monitoring for Power Generation</strong>
+						p(data-sr="wait .5s") The PI System provides power generators with a universal data infrastructure that is capable of collecting, managing and analyzing information from multiple isolated sources across the enterprise and presenting that data in a way that allows management, engineering, operations and maintenance staff to share information and solve problems faster.
 						.row
-							.col-sm-12.col-md-7
+							.col-sm-12.col-md-7(data-sr="wait .6s")
 								.panel.panel-default
 									.panel-body.text-center
 										img(src="assets/section_5_thumbail_1.png").diagram
@@ -127,7 +138,7 @@ html(lang="en")
 										//- 		img(src="assets/download_ebook_button.png")
 										a(href="http://pages.osisoft.com/Power-CBM-eBook_LP.html")
 											button(type="submit").yellow-button.center-block.trans Download eBook
-							.col-sm-12.col-md-5								
+							.col-sm-12.col-md-5(data-sr="wait .7s")
 								.panel.panel-default
 									.panel-body.text-center
 										img(src="assets/section_5_thumbail_2.png").diagram
@@ -139,12 +150,13 @@ html(lang="en")
 											button(type="submit").yellow-button.center-block.trans Download Whitepaper
 		.container-fluid.widthfix#s6
 			.content-space-three
-				.container.content
-					h1 <strong>How It Works</strong>
+				.container.content(data-sr="wait .2s")
+					h1 
+						span <strong>How It Works</strong>
 					p The PI System provides key 
 						#[a(href="#", data-toggle="tooltip", data-html="true", title="• capturing and sharing data in its original fidelity without averaging or aggregating, using proven methods that scale to an enterprise;<br>• providing efficient real-time data management from a wide variety of operational sources in a highly secure manner;<br>• using an Asset Framework to organize data streams and related process information by asset and plant topology, giving the data functional and operational context<br>• providing advanced analytics that convert raw data streams into meaningful events and values;<br>• implementing predictive warning notifications systems that send alerts to facilitate fast response to potential production or equipment problems<br>• serving up data to other advanced analytical tools and engines; and<br>• integrating business and operational systems to connect employees, business partners, suppliers, markets").tt #[em capabilities]] for CBM. It alters the process from a static or periodic assessment to a real-time assessment of asset health. Engineers are able to create a more comprehensive data environment that can be used to conduct thorough analysis of current conditions. This allows them to transform real-time data into valuable information that can supplement and enhance their data analysis.
 					.row
-						.col-sm-12.col-md-6
+						.col-sm-12.col-md-6(data-sr="wait .3s")
 							.panel.panel-default
 								.panel-body.text-center
 									img(src="assets/section_6_thumbail_1.png").diagram
@@ -152,7 +164,7 @@ html(lang="en")
 									//- button(type="submit").center-block.trans
 									//- 	img(src="assets/section_6_view_the_demo_button.png")
 									button(type="button", data-toggle="modal", data-target="#myModal1").yellow-button.center-block.trans View the Demo
-						.col-sm-12.col-md-6								
+						.col-sm-12.col-md-6(data-sr="wait .4s")				
 							.panel.panel-default
 								.panel-body.text-center
 									img(src="assets/section_6_thumbail_2.jpg").diagram
@@ -165,17 +177,18 @@ html(lang="en")
 										button(type="submit").yellow-button.center-block.trans View the Webinar
 		.container-fluid.widthfix#s7
 			.content-block-two
-				.container.content
-					h1 "<strong>Time is of the essence.</strong><span class="black">The sooner you find out there is a problem,</span> <strong>the sooner you can do something about it.</strong>"
-					p.black - Mohammed Yousuf, Senior Staff Engineer, <strong>Exelon</strong>
+				.container.content(data-sr="wait .2s")
+					h1 
+						span "<strong>Time is of the essence.</strong><span class="black">The sooner you find out there is a problem,</span> <strong>the sooner you can do something about it.</strong>"
+					p.black(data-sr="wait .4s") - Mohammed Yousuf, Senior Staff Engineer, <strong>Exelon</strong>
 					//- button(type="submit").center-block.trans.floatright
 					//- 	a(href="assets/CB_Exelon_LT_EN_FINAL.pdf")
 					//- 		img(src="assets/exelon_story_button.png")
 					a(href="assets/CB_Exelon_LT_EN_FINAL.pdf")
-						button(type="submit").yellow-button.center-block.trans.floatright Read Exelon's Story
+						button(type="submit", data-sr="wait .6s").yellow-button.center-block.trans.floatright Read Exelon's Story
 		.container-fluid.widthfix.greybgform#s8
 			.content-block-one
-				.container
+				.container(data-sr="wait .3s")
 					.content.formheading
 						p We know we may not have answered all your questions, so we invite you to contact us for a 1:1 discussion to find out how the PI System for CBM can address your specific operation optimization and system efficiency challenges.
 					.row
@@ -197,21 +210,21 @@ html(lang="en")
 		//- 	a(href="www.google.com")
 		.footer
 			.container
-				.links
+				.links(data-sr="wait .4s")
 					span © 2015 OSIsoft 
 					span | 
-						a(href="https://www.osisoft.com") osisoft.com 
+						a osisoft.com 
 					span | 
 						a(href="http://www.osisoft.com/home/Privacy_Policy.aspx") Privacy 
 				.image-links
 					ul.social
-						li.social_twitter.trans
+						li.social_twitter.trans(data-sr="wait .5s")
 							a(href="https://twitter.com/OSIsoft", target="_blank")
-						li.social_facebook.trans
+						li.social_facebook.trans(data-sr="wait .6s")
 							a(href="http://www.facebook.com/OSIsoft", target="_blank")
-						li.social_linkedin.trans
+						li.social_linkedin.trans(data-sr="wait .7s")
 							a(href="http://www.linkedin.com/company/osisoft", target="_blank")
-						li.social_users.trans
+						li.social_users.trans(data-sr="wait .8s")
 							a(href="http://community.osisoft.com/", target="_blank")
 
 		.modal.fade#myModal0(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
@@ -315,7 +328,9 @@ html(lang="en")
 
 
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
-		//- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+		script(src="scrollReveal.min.js")
+		script.
+			window.sr = new scrollReveal();
 		script(src="main.js")
 		script(src="fix.js")
 		script.

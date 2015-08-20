@@ -86,7 +86,7 @@ html(lang="en")
 						li minimize unexpected failures
 						li maximize use of resources
 						li increase reliability and availability
-						li support life extetnsion
+						li support life extension
 					h2 
 						span(data-sr="wait .6s") Visit us and the POWER-GEN Show in Las Vegas, December 8-10 at Booth #8235
 		.container-fluid.widthfix#s3
@@ -154,7 +154,7 @@ html(lang="en")
 					h1 
 						span <strong>How It Works</strong>
 					p The PI System provides key 
-						#[a(href="#", data-toggle="tooltip", data-html="true", title="• capturing and sharing data in its original fidelity without averaging or aggregating, using proven methods that scale to an enterprise;<br>• providing efficient real-time data management from a wide variety of operational sources in a highly secure manner;<br>• using an Asset Framework to organize data streams and related process information by asset and plant topology, giving the data functional and operational context<br>• providing advanced analytics that convert raw data streams into meaningful events and values;<br>• implementing predictive warning notifications systems that send alerts to facilitate fast response to potential production or equipment problems<br>• serving up data to other advanced analytical tools and engines; and<br>• integrating business and operational systems to connect employees, business partners, suppliers, markets").tt #[em capabilities]] for CBM. It alters the process from a static or periodic assessment to a real-time assessment of asset health. Engineers are able to create a more comprehensive data environment that can be used to conduct thorough analysis of current conditions. This allows them to transform real-time data into valuable information that can supplement and enhance their data analysis.
+						#[a(href="#", data-toggle="tooltip", data-html="true", title="• capturing and sharing data in its original fidelity without averaging or aggregating, using proven methods that scale to an enterprise<br>• providing efficient real-time data management from a wide variety of operational sources in a highly secure manner<br>• using an Asset Framework to organize data streams and related process information by asset and plant topology, giving the data functional and operational context<br>• providing advanced analytics that convert raw data streams into meaningful events and values<br>• implementing predictive warning notifications systems that send alerts to facilitate fast response to potential production or equipment problems<br>• serving up data to other advanced analytical tools and engines<br>• integrating business and operational systems to connect employees, business partners, suppliers, markets").tt #[ins capabilities]] for CBM. It alters the process from a static or periodic assessment to a real-time assessment of asset health. Engineers are able to create a more comprehensive data environment that can be used to conduct thorough analysis of current conditions. This allows them to transform real-time data into valuable information that can supplement and enhance their data analysis.
 					.row
 						.col-sm-12.col-md-6(data-sr="wait .3s")
 							.panel.panel-default
@@ -288,7 +288,9 @@ html(lang="en")
 					var player = new YT.Player('player' + vid, {
 						width: w,
 						height: h,
-						videoId: vids[vid]
+						videoId: vids[vid],
+						playerVars: {rel: 0},
+						enablejsapi: 1
 					});
 					players.push(player);
 				}
